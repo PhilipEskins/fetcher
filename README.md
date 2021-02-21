@@ -37,7 +37,7 @@ _If you have problems or would like to comment about something feel free to cont
 
 ## Technologies Used
 
-_This website uses HTML, CSS, JavaScript, express, node, ejs_
+_This website uses HTML, CSS, JavaScript, express, ejs, nodemon_
 
 ### License
 
