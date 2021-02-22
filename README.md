@@ -16,6 +16,9 @@ _You will be able to sign up and create a list of movies and/or tv shows you are
 
 ## Process
 
+#### Sunday 2/21/21
+_Started to split the code into MVC to keep the code cleaner._
+
 #### Saturday 2/20/21
 _Started app, going to work on log in function first. Using [Learn JavaScript: Full-Stack from Scratch](https://www.udemy.com/course/learn-javascript-full-stack-from-scratch/learn/lecture/14678098#overview) by [Brad Schiff](https://www.udemy.com/user/bradschiff/) as a guide._
 
