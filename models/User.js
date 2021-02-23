@@ -5,6 +5,19 @@ let User = function(data) {
     this.errors = []
 }
 
+User.prototype.cleanUp = function() {
+    if (typeof(this.data.username) != 'string') {this.data.username = ''}
+    if (typeof(this.data.email) != 'string') {this.data.email = ''}
+    if (typeof(this.data.password) != 'string') {this.data.password = ''}
+
+    // get rid of extra data
+    this.data = {
+        username: this.data.username.trim().toLowerCase(),
+        email: this.data.email.trim().toLowerCase(),
+        password: this.data.password
+    }
+}
+
 User.prototype.validate = function() {
     let d = this.data
     let e = this.errors
@@ -21,6 +34,7 @@ User.prototype.validate = function() {
 
 User.prototype.register = function() {
     // Validate data
+    this.cleanUp()
     this.validate()
 
     // Save data to database if no errors

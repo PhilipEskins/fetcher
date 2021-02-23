@@ -17,7 +17,7 @@ _You will be able to sign up and create a list of movies and/or tv shows you are
 ## Process
 
 #### Monday 2/22/21
-_Added validator package to project to help check for valid email and username. Added a bunch of checks for registration form._
+_Added validator package to project to help check for valid email and username. Added a bunch of checks for registration form and clean up the registration data._
 
 #### Sunday 2/21/21
 _Started to split the code into MVC to keep the code cleaner._
