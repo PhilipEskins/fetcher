@@ -16,6 +16,9 @@ _You will be able to sign up and create a list of movies and/or tv shows you are
 
 ## Process
 
+#### Tuesday 2/23/21
+_App now passes registration data into a mongodb database on atlas_
+
 #### Monday 2/22/21
 _Added validator package to project to help check for valid email and username. Added a bunch of checks for registration form and clean up the registration data._
 
@@ -31,6 +34,7 @@ _Started app, going to work on register function first. Using [Learn JavaScript:
 * _Download repository from https://github.com/PhilipEskins/fetcher/_
 * _Type npm install from the command line interface_
 * _Type npm run start from the command line interface_
+* _Create a .env file, add CONNECTIONSTRING and PORT, CONNECTIONSTRING will be the info for your database connection and PORT is what port the app should listen on_
 * _If you'd like to alter or see the code for the project, after downloading open the project up in your favorite code editor._
 
 ## Known Bugs
@@ -43,7 +47,7 @@ _If you have problems or would like to comment about something feel free to cont
 
 ## Technologies Used
 
-_This website uses HTML, CSS, JavaScript, express, ejs, nodemon, validator_
+_This website uses HTML, CSS, JavaScript, express, ejs, nodemon, validator, mongodb, dotenv_
 
 ### License
 
