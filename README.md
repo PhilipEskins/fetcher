@@ -9,12 +9,15 @@
 _You will be able to sign up and create a list of movies and/or tv shows you are interested in watching. When you aren't able to decide on what to watch this app will pick a random item from your list. Once you watch it you'll be able to remove the item from your list._
 
 ## Current Features
-* No current features
+* Users can sign up
 
 ## Future Features
 * Let users search a movie/tv database to more easily add shows
 
 ## Process
+
+#### Wednesday 2/24/21
+_You can now log in and get a text message saying you where either successful or not_
 
 #### Tuesday 2/23/21
 _App now passes registration data into a mongodb database on atlas_

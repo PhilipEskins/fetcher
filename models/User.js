@@ -33,6 +33,18 @@ User.prototype.validate = function() {
     if (d.username.length > 30) {e.push("Username too long")}
 }
 
+// uses callback
+User.prototype.login = function(callback) {
+    this.cleanUp()
+    usersCollection.findOne({username: this.data.username}, (err, attemptedUser) => {
+        if (attemptedUser && attemptedUser.password == this.data.password) {
+            callback("Congratz")
+        } else {
+            callback("Invaild")
+        }
+    })
+}
+
 User.prototype.register = function() {
     // Validate data
     this.cleanUp()
