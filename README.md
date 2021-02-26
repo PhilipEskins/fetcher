@@ -10,11 +10,15 @@ _You will be able to sign up and create a list of movies and/or tv shows you are
 
 ## Current Features
 * Users can sign up
+* Users can log in
 
 ## Future Features
 * Let users search a movie/tv database to more easily add shows
 
 ## Process
+
+#### Thursday 2/25/21
+_Refactored log in function to use a Promise instead of a callback_
 
 #### Wednesday 2/24/21
 _You can now log in and get a text message saying you where either successful or not_
