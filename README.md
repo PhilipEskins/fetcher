@@ -17,6 +17,9 @@ _You will be able to sign up and create a list of movies and/or tv shows you are
 
 ## Process
 
+#### Friday 2/26/21
+_User's password is now saved as a hash in the database_
+
 #### Thursday 2/25/21
 _Refactored log in function to use a Promise instead of a callback_
 
@@ -54,7 +57,7 @@ _If you have problems or would like to comment about something feel free to cont
 
 ## Technologies Used
 
-_This website uses HTML, CSS, JavaScript, express, ejs, nodemon, validator, mongodb, dotenv_
+_This website uses HTML, CSS, JavaScript, express, ejs, nodemon, validator, mongodb, dotenv, bcryptjs_
 
 ### License
 
