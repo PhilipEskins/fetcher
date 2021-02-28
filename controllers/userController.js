@@ -5,6 +5,7 @@ const User = require("../models/User")
 exports.login = function(req, res) {
     let user = new User(req.body)
     user.login().then(function(result) {
+        req.session.user = {username: user.data.username}
         res.send(result)
     }).catch(function(e) {
         res.send(e)
@@ -26,5 +27,9 @@ exports.register = (req, res) => {
 }
 
 exports.home = (req, res) => {
-    res.render("index")
+    if (req.session.user) {
+        res.send("wElcome " + req.session.user.username)
+    } else {
+        res.render("index")
+    }
 }

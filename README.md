@@ -57,7 +57,7 @@ _If you have problems or would like to comment about something feel free to cont
 
 ## Technologies Used
 
-_This website uses HTML, CSS, JavaScript, express, ejs, nodemon, validator, mongodb, dotenv, bcryptjs_
+_This website uses HTML, CSS, JavaScript, express, ejs, nodemon, validator, mongodb, dotenv, bcryptjs, express-session_
 
 ### License
 
