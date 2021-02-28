@@ -28,7 +28,7 @@ exports.register = (req, res) => {
 
 exports.home = (req, res) => {
     if (req.session.user) {
-        res.send("wElcome " + req.session.user.username)
+        res.render('home-dashboard', {username: req.session.user.username})
     } else {
         res.render("index")
     }

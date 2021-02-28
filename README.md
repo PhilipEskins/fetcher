@@ -17,6 +17,9 @@ _You will be able to sign up and create a list of movies and/or tv shows you are
 
 ## Process
 
+#### Saturday 2/27/21
+_Set up session in the app to save user info between http requests and saves it to the database_
+
 #### Friday 2/26/21
 _User's password is now saved as a hash in the database_
 
@@ -55,9 +58,9 @@ _New app, no known bugs at this time_
 
 _If you have problems or would like to comment about something feel free to contact me at philipeskins@gmail.com_
 
-## Technologies Used
+## Technologies/packages used
 
-_This website uses HTML, CSS, JavaScript, express, ejs, nodemon, validator, mongodb, dotenv, bcryptjs, express-session_
+_This website uses HTML, CSS, JavaScript, express, ejs, nodemon, validator, mongodb, dotenv, bcryptjs, express-session, connect-mongo_
 
 ### License
 
