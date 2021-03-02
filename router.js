@@ -5,10 +5,9 @@ const userController = require('./controllers/userController')
 // Home page
 router.get('/', userController.home)
 
-// Sign up
+// User routes
 router.post('/register', userController.register)
-
-// Login
 router.post('/login', userController.login)
+router.post('/logout', userController.logout)
 
 module.exports = router

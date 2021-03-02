@@ -10,12 +10,16 @@ _You will be able to sign up and create a list of movies and/or tv shows you are
 
 ## Current Features
 * Users can sign up
-* Users can log in
+* Users can sign in
+* Users can sign out
 
 ## Future Features
 * Let users search a movie/tv database to more easily add shows
 
 ## Process
+
+#### Sunday 2/28/21
+_Users can now log out and there is no more weird text messages after signing in_
 
 #### Saturday 2/27/21
 _Set up session in the app to save user info between http requests and saves it to the database_
