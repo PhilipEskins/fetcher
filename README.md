@@ -18,6 +18,9 @@ _You will be able to sign up and create a list of movies and/or tv shows you are
 
 ## Process
 
+#### Monday 3/1/21
+_Added flash messages for errors_
+
 #### Sunday 2/28/21
 _Users can now log out and there is no more weird text messages after signing in_
 
@@ -64,7 +67,7 @@ _If you have problems or would like to comment about something feel free to cont
 
 ## Technologies/packages used
 
-_This website uses HTML, CSS, JavaScript, express, ejs, nodemon, validator, mongodb, dotenv, bcryptjs, express-session, connect-mongo_
+_This website uses HTML, CSS, JavaScript, express, ejs, nodemon, validator, mongodb, dotenv, bcryptjs, express-session, connect-mongo, connect-flash_
 
 ### License
 

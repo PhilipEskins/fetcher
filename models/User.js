@@ -42,7 +42,7 @@ User.prototype.login = function() {
             if (attemptedUser && bcrypt.compareSync(this.data.password, attemptedUser.password)) {
                 resolve("Congratz")
             } else {
-                reject("Invaild")
+                reject("Invaild username or password")
             }
         }).catch(function() {
             reject("Try again later")

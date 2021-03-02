@@ -1,4 +1,3 @@
-const { response } = require("../app")
 const User = require("../models/User")
 
 // uses Promise (then/catch method)
@@ -10,7 +9,10 @@ exports.login = function(req, res) {
             res.redirect('/')
         })
     }).catch(function(e) {
-        res.send(e)
+        req.flash('errors', e)
+        req.session.save(function() {
+            res.redirect('/')
+        })
     })
 }
 
@@ -36,6 +38,6 @@ exports.home = (req, res) => {
     if (req.session.user) {
         res.render('home-dashboard', {username: req.session.user.username})
     } else {
-        res.render("index")
+        res.render("index", {errors: req.flash('errors')})
     }
 }
