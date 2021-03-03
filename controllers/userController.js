@@ -26,18 +26,25 @@ exports.logout = function(req, res) {
 
 exports.register = (req, res) => {
     let user = new User(req.body)
-    user.register()
-    if (user.errors.length) {
-        res.send(user.errors)
-    } else {
-        res.send("Good jorb")
-    }
+    user.register().then(() => {
+        req.session.user = {username: user.data.username}
+        req.session.save(function () {
+            res.redirect('/')
+        })
+    }).catch((regErrors) => {
+        regErrors.forEach(function(e) {
+            req.flash('regErrors', e)
+        })
+        req.session.save(function () {
+            res.redirect('/')
+        })
+    })
 }
 
 exports.home = (req, res) => {
     if (req.session.user) {
         res.render('home-dashboard', {username: req.session.user.username})
     } else {
-        res.render("index", {errors: req.flash('errors')})
+        res.render("index", {errors: req.flash('errors'), regErrors: req.flash('regErrors')})
     }
 }

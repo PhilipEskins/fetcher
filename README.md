@@ -18,6 +18,9 @@ _You will be able to sign up and create a list of movies and/or tv shows you are
 
 ## Process
 
+#### Tuesday 3/2/21
+_Added flash messages for errors with registration and after signing in you now go directly to the dashboard_
+
 #### Monday 3/1/21
 _Added flash messages for errors_
 
@@ -73,4 +76,4 @@ _This website uses HTML, CSS, JavaScript, express, ejs, nodemon, validator, mong
 
 *MIT*
 
-Copyright (c) 2019 **_Philip Eskins_**
+Copyright (c) 2021 **_Philip Eskins_**
