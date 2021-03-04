@@ -18,6 +18,9 @@ _You will be able to sign up and create a list of movies and/or tv shows you are
 
 ## Process
 
+#### Wednesday 3/3/21
+_Profile picture can now accept gravatar_
+
 #### Tuesday 3/2/21
 _Added flash messages for errors with registration and after signing in you now go directly to the dashboard_
 
@@ -70,7 +73,7 @@ _If you have problems or would like to comment about something feel free to cont
 
 ## Technologies/packages used
 
-_This website uses HTML, CSS, JavaScript, express, ejs, nodemon, validator, mongodb, dotenv, bcryptjs, express-session, connect-mongo, connect-flash_
+_This website uses HTML, CSS, JavaScript, express, ejs, nodemon, validator, mongodb, dotenv, bcryptjs, express-session, connect-mongo, connect-flash, md5_
 
 ### License
 
