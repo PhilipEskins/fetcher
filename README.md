@@ -18,6 +18,9 @@ _You will be able to sign up and create a list of movies and/or tv shows you are
 
 ## Process
 
+#### Thursday 3/4/21
+_Created a submit movie page. Headers and footers are now consolidated into one file that is included for each main page._
+
 #### Wednesday 3/3/21
 _Profile picture can now accept gravatar_
 
