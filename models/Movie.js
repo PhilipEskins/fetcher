@@ -43,4 +43,19 @@ Movie.prototype.submit = function() {
     })
 }
 
+Movie.findSingleById = function (id) {
+    return new Promise(async function(resolve, reject) {
+        if (typeof(id) != 'string' || !ObjectID.isValid(id)) {
+            reject()
+            return
+        }
+        let movie = await moviesCollection.findOne({_id: new ObjectID(id)})
+        if (movie) {
+            resolve(movie)
+        } else {
+            reject()
+        }
+    })
+}
+
 module.exports = Movie

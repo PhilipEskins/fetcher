@@ -14,5 +14,6 @@ router.post('/logout', userController.logout)
 // Movie routes
 router.get('/submit-movie', userController.mustBeLoggedIn, movieController.viewSubmitScreen)
 router.post('/submit-movie', userController.mustBeLoggedIn, movieController.submit)
+router.get('/movie/:id', movieController.viewSingle)
 
 module.exports = router

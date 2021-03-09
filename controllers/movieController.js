@@ -12,3 +12,12 @@ exports.submit = function(req, res) {
         res.send(errors)
     })
 }
+
+exports.viewSingle = async function(req, res) {
+    try {
+        let movie = await Movie.findSingleById(req.params.id)
+        res.render('single-movie-screen', {movie: movie})
+    } catch {
+        res.send("404 error")
+    }
+}

@@ -18,6 +18,12 @@ _You will be able to sign up and create a list of movies and/or tv shows you are
 
 ## Process
 
+#### Monday 3/8/21
+_You can now view a single movie info page_
+
+#### Sunday 3/7/21
+_Movie info now gets saved to the database_
+
 #### Thursday 3/4/21
 _Created a submit movie page. Headers and footers are now consolidated into one file that is included for each main page._
 
