@@ -12,11 +12,15 @@ _You will be able to sign up and create a list of movies and/or tv shows you are
 * Users can sign up
 * Users can sign in
 * Users can sign out
+* Users can submit a movie
 
 ## Future Features
 * Let users search a movie/tv database to more easily add shows
 
 ## Process
+
+#### Wednesday 3/10/21
+_Single movie page now displays who submitted it with there gravatar_
 
 #### Monday 3/8/21
 _You can now view a single movie info page_

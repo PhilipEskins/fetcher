@@ -18,6 +18,6 @@ exports.viewSingle = async function(req, res) {
         let movie = await Movie.findSingleById(req.params.id)
         res.render('single-movie-screen', {movie: movie})
     } catch {
-        res.send("404 error")
+        res.render('404')
     }
 }

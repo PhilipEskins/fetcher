@@ -1,5 +1,6 @@
 const moviesCollection = require('../db').db().collection("movies")
 const ObjectID = require('mongodb').ObjectID
+const User = require('./User')
 
 let Movie = function (data, userid) {
     this.data = data
@@ -49,9 +50,28 @@ Movie.findSingleById = function (id) {
             reject()
             return
         }
-        let movie = await moviesCollection.findOne({_id: new ObjectID(id)})
-        if (movie) {
-            resolve(movie)
+        let movies = await moviesCollection.aggregate([
+            {$match: {_id: new ObjectID(id)}},
+            {$lookup: {from: 'users', localField: 'submittedBy', foreignField: '_id', as: 'submittedDocument'}},
+            {$project: {
+                title: 1,
+                year: 1,
+                createdDate: 1,
+                submittedBy: {$arrayElemAt: ['$submittedDocument', 0]}
+            }}
+        ]).toArray()
+
+        // clean up submitted by for movies
+        movies = movies.map(function(movie) {
+            movie.submittedBy = {
+                username: movie.submittedBy.username,
+                avatar: new User(movie.submittedBy, true).avatar
+            }
+            return movie
+        })
+
+        if (movies.length) {
+            resolve(movies[0])
         } else {
             reject()
         }
