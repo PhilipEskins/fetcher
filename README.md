@@ -19,6 +19,9 @@ _You will be able to sign up and create a list of movies and/or tv shows you are
 
 ## Process
 
+#### Thursday 3/11/21
+_You can now view a profile screen_
+
 #### Wednesday 3/10/21
 _Single movie page now displays who submitted it with there gravatar_
 

@@ -11,6 +11,9 @@ router.post('/register', userController.register)
 router.post('/login', userController.login)
 router.post('/logout', userController.logout)
 
+// Profile routes
+router.get('/profile/:username', userController.ifUserExists, userController.profileMoviesScreen)
+
 // Movie routes
 router.get('/submit-movie', userController.mustBeLoggedIn, movieController.viewSubmitScreen)
 router.post('/submit-movie', userController.mustBeLoggedIn, movieController.submit)
